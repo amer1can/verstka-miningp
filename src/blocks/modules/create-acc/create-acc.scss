@@ -1,6 +1,6 @@
 #create-acc {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -12,7 +12,7 @@
 #create-acc.visible {
   opacity: 1;
   visibility: visible;
-  transition: all 1s ease;
+  transition: all 1s ease 0.3s;
 }
 .create-acc__wrapper {
   position: relative;
@@ -170,7 +170,10 @@
 }
 
 .create-acc__back {
+  align-self: flex-start;
   color: #3B5AFF;
   font-weight: 400;
   font-size: 1.36rem;
+  cursor: pointer;
+  border: none;
 }

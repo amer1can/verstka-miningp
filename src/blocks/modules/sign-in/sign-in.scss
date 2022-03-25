@@ -12,7 +12,7 @@
 #sign-in.visible {
   opacity: 1;
   visibility: visible;
-  transition: all 1s ease;
+  transition: all 1s ease 0.3s;
 }
 .sign-in__wrapper {
   position: relative;
@@ -94,4 +94,10 @@
 }
 .sign-in__create {
   align-self: center;
+}
+.sign-in__create-link {
+  color: #3B5AFF;
+  margin-left: 7px;
+  border: 0;
+  cursor: pointer;
 }

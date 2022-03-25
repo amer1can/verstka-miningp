@@ -22,7 +22,7 @@ body {
     box-sizing: border-box;
     background: #E5E5E5;
 
-    &.fixed, &.sign {
+    &.fixed, &.sign, &.create {
         overflow: hidden;
     }
 }
