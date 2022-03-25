@@ -1,0 +1,55 @@
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: #FFFFFF;
+    font-size: 22px;
+    @media (max-width: 998px) {
+        font-size: 20px;
+    }
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+body {
+    max-width: 1512px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #000;
+    box-sizing: border-box;
+    background: #E5E5E5;
+
+    &.fixed, &.sign {
+        overflow: hidden;
+    }
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.container {
+    padding: 0 30px;
+    @media (max-width: 768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.btn {
+    display: inline-block;
+    padding: 18px 50px;
+    background: #3B5AFF;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.header-blue {
+    color: #3B5AFF;
+    font-size: 2.27rem;
+    font-weight: 700;
+}

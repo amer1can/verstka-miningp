@@ -1,0 +1,97 @@
+#sign-in {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00000050;
+  transition: all 0.5s ease;
+}
+#sign-in.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 1s ease;
+}
+.sign-in__wrapper {
+  position: relative;
+  max-width: 657px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 50px 50px 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sign-in__close {
+  position: absolute;
+  top: 35px;
+  right: 30px;
+  cursor: pointer;
+}
+.sign-in__header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.sign-in__body {
+  display: flex;
+  flex-direction: column;
+}
+.sign-in__input {
+  border: 1px solid #3B5AFF;
+  width: calc(100% - 140px);
+  padding: 20px 70px;
+  color: #000000;
+  font-size: 1.13rem;
+  font-weight: 400;
+  outline: none;
+
+  &::placeholder {
+    font-size: 1.13rem;
+    font-weight: 400;
+    color: #000000;
+  }
+}
+.sign-in__input-email {
+  margin-top: 45px;
+  position: relative;
+  &::before {
+    content: url("../../../../img/sign/email.svg");
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}
+.sign-in__input-pass {
+  margin-top: 45px;
+  position: relative;
+  &::before {
+    content: url("../../../../img/sign/pass.svg");
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  &::after {
+    content: url("../../../../img/sign/eye.svg");
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
+.sign-in__forgot {
+  margin: 15px 0 25px;
+  align-self: flex-start;
+  color: #3B5AFF;
+}
+.sign-in__btn {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.36rem;
+  text-align: center;
+}
+.sign-in__create {
+  align-self: center;
+}

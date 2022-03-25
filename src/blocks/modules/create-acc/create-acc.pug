@@ -1,0 +1,31 @@
+#create-acc
+    .create-acc__wrapper
+        .create-acc__close
+            img(src="../../../../img/sign/close.svg")
+        .create-acc__header Account creation
+
+        .create-acc__body
+            .field
+                input.create-acc__input(type="text" placeholder="First name" name="name")
+            .field
+                input.create-acc__input(type="text" placeholder="Last name" name="last")
+            .field.create-acc__input-email
+                input.create-acc__input(type="text" placeholder="E-mail" name="email")
+            .field.create-acc__input-phone
+                input.create-acc__input(type="text" placeholder="+44" name="phone")
+            .field.create-acc__input-pass
+                input.create-acc__input(type="password" placeholder="Password" name="pass")
+            .field.create-acc__input-pass
+                input.create-acc__input(type="password" placeholder="Repeat password" name="repeat")
+            .create-acc__accept
+                input(type="checkbox")#create-acc__check
+                label(for="create-acc__check")
+                    span I accept
+                    a(href="#") User Agreement, Privacy Policy
+
+            .create-acc__human-check
+                input(type="checkbox")#create-acc__human
+                label(for="create-acc__human") Я человек
+
+            .btn.create-acc__btn Sign in
+            a(href="#").create-acc__back Go back
